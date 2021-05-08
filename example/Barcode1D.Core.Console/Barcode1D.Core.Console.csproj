@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Barcode1D.Core\Barcode1D.Core.csproj" />
+    <ProjectReference Include="..\GS1AI.Core\GS1AI.Core.csproj" />
+  </ItemGroup>
+
+</Project>

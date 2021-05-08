@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Title>Barcode Bakery - 1D</Title>
+    <AssemblyName>BarcodeBakery.Barcode1D</AssemblyName>
+    <RootNamespace>BarcodeBakery.Barcode</RootNamespace>
+    <Description>Generates 1D barcodes from a .NET Core server to a file or HTML document.</Description>
+    <Author>Jean-Sébastien Goupil</Author>
+    <Authors>Jean-Sébastien Goupil</Authors>
+    <Copyright>Copyright © Jean-Sébastien Goupil</Copyright>
+    <Version>3.0.0</Version>
+    <PackageId>BarcodeBakery.Barcode1D</PackageId>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageTags>barcode generator bakery codabar code11 code39 code39extended code93 code128 ean-8 ean-13 ean8 ean13 isbn i25 s25 msi upc-a upc-e upcext2 upcext5</PackageTags>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RepositoryUrl>git://github.com/barcode-bakery/barcode-dotnet-1d</RepositoryUrl>
+    <PackageProjectUrl>https://www.barcodebakery.com</PackageProjectUrl>
+    <PackageLicenseUrl>https://www.barcodebakery.com/en/license/eula</PackageLicenseUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SkiaSharp" Version="1.68.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BarcodeCommon.Core\BarcodeCommon.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="TunnelVisionLabs.ReferenceAssemblyAnnotator" PrivateAssets="All" Version="1.0.0-alpha.160" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageDownload Include="Microsoft.NETCore.App.Ref" Version="[3.0.0]" />
+  </ItemGroup>
+</Project>
